@@ -3,6 +3,6 @@
 
 |**LEVEL**      |**SOLVED**     |**LANGUAGES**  |
 |:-------------:|:-------------:|:-------------:|
-| EASY          |ALL            | `C++`         |
-| MEDIUM        |8 / 17         | `C++`         |  
-| HARD          |none           | `???`         | 
+| EASY          |*ALL*          | `C++`         |
+| MEDIUM        |*8 / 17*       | `C++`         |  
+| HARD          |*none*         | `???`         | 
