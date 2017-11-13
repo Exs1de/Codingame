@@ -6,3 +6,4 @@
 | EASY          |*ALL*          | `C++`         |
 | MEDIUM        |*8 / 17*       | `C++`         |  
 | HARD          |-              | -             | 
+| COMMUNITY     |-              | -             | 
