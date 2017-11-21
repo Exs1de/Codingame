@@ -1,34 +1,30 @@
-using System;
-using System.Linq;
-using System.IO;
-using System.Text;
-using System.Collections;
-using System.Collections.Generic;
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
 
 /**
  * Auto-generated code below aims at helping you parse
  * the standard input according to the problem statement.
  **/
- 
-class Solution
+int main()
 {
-    static void Main(string[] args)
-    {
-        int n = int.Parse(Console.ReadLine()); // the number of temperatures to analyse
-        string[] inputs = Console.ReadLine().Split(' ');
-        
-        int answer = 9999;
-        if(n == 0)answer = 0;
-        
-        for (int i = 0; i < n; i++)
-        {
-            int t = int.Parse(inputs[i]); // a temperature expressed as an integer ranging from -273 to 5526
-            if(Math.Abs(t) < Math.Abs(answer) || t == Math.Abs(answer))answer = t;  
-        }
-
-        // Write an action using Console.WriteLine()
-        // To debug: Console.Error.WriteLine("Debug messages...");
-
-        Console.WriteLine(answer);
+    int n; // the number of temperatures to analyse
+    cin >> n; cin.ignore();
+    
+    int answer = 9999;
+    if(n == 0)answer = 0;
+    
+    for (int i = 0; i < n; i++) {
+        int t; // a temperature expressed as an integer ranging from -273 to 5526
+        cin >> t; cin.ignore();
+        cerr << t << endl;
+        if(abs(t) < abs(answer) || t == abs(answer))answer = t;     
     }
+    
+    // Write an action using cout. DON'T FORGET THE "<< endl"
+    // To debug: cerr << "Debug messages..." << endl;
+    cout << answer << endl;
 }
